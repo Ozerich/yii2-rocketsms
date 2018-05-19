@@ -98,13 +98,13 @@ class RocketSms extends Component
      */
     private function preparePhone($phone)
     {
+        $phone = preg_replace('/[^0-9,.]/', '', $phone);
+
         if (mb_strlen($phone) == 9) {
             $phone = '375' . $phone;
         } else if (mb_substr($phone, 0, 2) == '80') {
             $phone = '375' . mb_substr($phone, 2);
         }
-
-        $phone = preg_replace('/[^0-9,.]/', '', $phone);
 
         return $phone;
     }
