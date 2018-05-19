@@ -104,6 +104,8 @@ class RocketSms extends Component
             $phone = '375' . mb_substr($phone, 2);
         }
 
+        $phone = preg_replace('/[^0-9,.]/', '', $phone);
+
         return $phone;
     }
 
