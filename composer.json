@@ -1,0 +1,31 @@
+{
+  "name": "ozerich/yii2-rocketsms",
+  "description": "Yii2 component for SMS provider RocketSMS.by",
+  "keywords": [
+    "yii2",
+    "extension",
+    "sms",
+    "rocketsms"
+  ],
+  "homepage": "https://github.com/ozerich/yii2-rocketsms",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vital Ozierski aka ozerich",
+      "email": "v.ozierski@blak-it.com",
+      "homepage": "https://blak-it.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "myclabs/php-enum": "~1.0",
+    "yiisoft/yii2": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "blakit\\rocketsms\\": "src"
+    }
+  }
+}
